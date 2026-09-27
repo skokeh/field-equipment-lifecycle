@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.26085.164" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26085.164" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26085.00166">
+<ImportExportXml version="9.2.26085.166" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.26085.166" OrganizationSchemaType="Standard" CRMServerServiceabilityVersion="9.2.26085.00166">
   <SolutionManifest>
     <UniqueName>NorthFieldEquipmentManagement</UniqueName>
     <LocalizedNames>
@@ -80,17 +80,36 @@
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="1" />
       <RootComponent type="1" schemaName="nfs_equipment" behavior="0" />
+      <RootComponent type="1" schemaName="nfs_inspection" behavior="0" />
+      <RootComponent type="1" schemaName="nfs_maintenanceorder" behavior="0" />
+      <RootComponent type="1" schemaName="nfs_maintenanceordersparepart" behavior="0" />
+      <RootComponent type="1" schemaName="nfs_maintenanceordertechnician" behavior="0" />
       <RootComponent type="1" schemaName="nfs_site" behavior="0" />
+      <RootComponent type="1" schemaName="nfs_sparepart" behavior="0" />
       <RootComponent type="1" schemaName="nfs_technician" behavior="0" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
       <RootComponent type="9" schemaName="nfs_condition" behavior="0" />
+      <RootComponent type="9" schemaName="nfs_inspectiontype" behavior="0" />
       <RootComponent type="9" schemaName="nfs_operationalstatus" behavior="0" />
+      <RootComponent type="9" schemaName="nfs_result" behavior="0" />
       <RootComponent type="9" schemaName="nfs_specialization" behavior="0" />
+      <RootComponent type="9" schemaName="nfs_status" behavior="0" />
       <RootComponent type="9" schemaName="nfs_type" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="1" schemaName="account" displayName="Account" parentSchemaName="" solution="System (5.0)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="systemuser" displayName="SystemUser" parentSchemaName="" solution="msdyn_PowerAdminSettingsEmail (2.2.3517.1)" />
+        <Dependent type="1" schemaName="systemuser" displayName="SystemUser" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="msdyn_flow_approval_priority" displayName="Priority" solution="msdyn_FlowApprovalsCore (2.2.17.0)">
+          <package appName="msdyn_FlowApprovals" version="2.2.17.0">msdyn_FlowApprovals (2.2.17.0)</package>
+        </Required>
+        <Dependent type="2" schemaName="nfs_priority" displayName="Priority" parentSchemaName="nfs_maintenanceorder" parentDisplayName="Maintenance Order" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

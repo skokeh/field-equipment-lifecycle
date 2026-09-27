@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6eab6cd2-a4cd-45d4-b9e3-ea8da8bff137}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="nfs_name" select="1" icon="1" preview="1">
+        <row name="result" id="nfs_maintenanceordersparepartid">
+          <cell name="nfs_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="nfs_maintenanceordersparepart">
+          <attribute name="nfs_maintenanceordersparepartid" />
+          <attribute name="nfs_name" />
+          <attribute name="createdon" />
+          <order attribute="nfs_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Maintenance Order Spare Part Advanced Find View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
