@@ -5,11 +5,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
-        <tab verticallayout="true" id="{aafe7def-c108-4d88-95d1-ce0f9d300727}" IsUserDefined="1">
+        <tab verticallayout="true" id="{aafe7def-c108-4d88-95d1-ce0f9d300727}" IsUserDefined="1" name="Spare Part Usage">
           <labels>
-            <label description="General" languagecode="1033" />
+            <label description="Spare Part Usage" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
@@ -20,11 +20,59 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{5769a53b-0639-4c81-8a0e-4b1f69cf9285}">
+                      <cell id="{5769a53b-0639-4c81-8a0e-4b1f69cf9285}" visible="false" showlabel="true">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
                         <control id="nfs_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="nfs_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1642f6c3-f862-4552-9e4c-2dcd1bec26f8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Maintenance Order" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_maintenanceorder" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nfs_maintenanceorder" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c499bbc8-cb72-4e85-8287-a24b824ed953}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Spare Part" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_sparepart" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nfs_sparepart" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69e482b8-d75a-4085-ad31-b487957e1366}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Installed Date" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_installeddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="nfs_installeddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ef5955e6-8e8c-41da-9d68-d0e825114b77}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity Used" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_quantityused" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="nfs_quantityused" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e17a69b8-a31b-48e2-84b9-c5c36cbab41b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity Before" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_quantitybefore" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="nfs_quantitybefore" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8e500399-81ef-4d8b-a8ed-ce8073beb59a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quantity After" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_quantityafter" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="nfs_quantityafter" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -42,6 +90,51 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{2f22e016-9deb-45dc-aa81-1946e04b8742}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{39ed7c3d-e227-486c-8572-dd4db0c4fec2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ac462a66-4203-4c00-9e55-d3a86ef79b53}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1b9ceb2c-1efe-45b4-8a09-8e7294d910c3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{687c2c5a-2d3d-4c2b-bb7b-866cd4971e68}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{adde0d34-3ada-45f3-9e46-69cf979d26dd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{30e5f3a0-a180-4f3e-a204-ac3a6f308f1e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a5e8c680-ae89-4038-add5-004a5eef4708}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

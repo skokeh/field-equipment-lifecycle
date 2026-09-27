@@ -5,11 +5,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{37ff402d-0dbe-4b1c-b534-28de766f1125}" IsUserDefined="1">
           <labels>
-            <label description="General" languagecode="1033" />
+            <label description="Technician Information" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
@@ -28,6 +28,46 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{094bec4c-498c-43e1-82a8-1fbf06df81a3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Employee Number" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_employeenumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nfs_employeenumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c892b5e1-0901-4c83-b209-30a426e39e57}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="nfs_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a6593db-e512-4938-a576-91b1212bd85f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_phone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nfs_phone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{392e5bb4-c124-466b-b7fa-0e7d827fee31}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Specialization" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_specialization" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="nfs_specialization" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0e1059c-822f-432a-8fae-b1f731dfed1c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Active" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_active" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="nfs_active" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{0fb51749-3f64-4cb3-8841-4639bebaa9d4}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
@@ -37,11 +77,88 @@
                     </row>
                   </rows>
                 </section>
+                <section name="null_section_3" id="6d7a2cd8-6887-47a6-93cd-6ff5be5884f6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Maintenance Orders" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{2678da9d-1916-41fe-a05b-b222284118ef}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="Maintenance Orders" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>nfs_maintenanceordertechnician_Technician_nfs_technician</RelationshipName>
+                            <TargetEntityType>nfs_maintenanceordertechnician</TargetEntityType>
+                            <ViewId>{F2CD337F-5855-4CE2-BC1F-9A89E7E5D29B}</ViewId>
+                            <ViewIds>{F2CD337F-5855-4CE2-BC1F-9A89E7E5D29B}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
               </sections>
             </column>
           </columns>
         </tab>
       </tabs>
+      <header id="{45d45031-2cdf-4c64-aef3-fa5e718a32e2}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{10f6de76-f7ab-43f0-ab8a-19630e46f00d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ddb10a99-d259-4648-b08b-224ab0983b56}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{13fac806-5509-44ca-8a4f-af6c57ef6b69}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{8070f844-6814-4e85-8393-8311930af0b9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{12208870-973b-4de7-b55e-52b7e41ba1eb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e4c5fe1-8c05-45d4-b7e5-8649356fedc4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3a1a4fa4-d61b-4671-8c9f-550fbe658b02}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

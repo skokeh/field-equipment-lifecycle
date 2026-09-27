@@ -5,11 +5,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
-        <tab verticallayout="true" id="{fb527ade-9570-4bb9-945d-92dd37d23110}" IsUserDefined="1">
+        <tab verticallayout="true" id="{fb527ade-9570-4bb9-945d-92dd37d23110}" IsUserDefined="1" name="Site Information">
           <labels>
-            <label description="General" languagecode="1033" />
+            <label description="Site Information" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
@@ -28,6 +28,46 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{87c3d810-5936-43e5-b609-dbfaa370604b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_customer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="nfs_customer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5c015831-92f4-4256-9653-c3fea327ffde}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Address" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_address" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nfs_address" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ded96e21-0702-4f5a-b319-81860af33d61}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_city" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nfs_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b21cdf7d-0078-44ad-bfb0-ff161f67dd28}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_country" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="nfs_country" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5ee5d0d3-55b4-4b27-8408-1ab27643dc72}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Active" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_active" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="nfs_active" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{5d543a40-a31d-4aab-86f9-96ebe43a03a9}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
@@ -37,11 +77,88 @@
                     </row>
                   </rows>
                 </section>
+                <section name="null_section_3" id="22f76030-aa81-44b2-9a86-a43d59d26300" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Equipments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{d04434cd-1e23-4642-bc5f-bf65ec5cd0be}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="Equipment" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>nfs_equipment_Site_nfs_site</RelationshipName>
+                            <TargetEntityType>nfs_equipment</TargetEntityType>
+                            <ViewId>{F325ADF6-969D-43D8-93C0-73FF78330999}</ViewId>
+                            <ViewIds>{F325ADF6-969D-43D8-93C0-73FF78330999}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
               </sections>
             </column>
           </columns>
         </tab>
       </tabs>
+      <header id="{03611b5b-50c2-4ffd-a4e8-9d4c64c482cf}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f4f63702-6d68-4f29-9dec-a6ae6dfb00ae}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f1637e54-872a-4245-b874-a79fcaeea3dc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{02b0fab4-2792-47a1-8828-c7f2627f955c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a1aa6526-6fb7-4b09-a003-716430370b53}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{453a268c-3003-485e-a588-3322945f0477}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5ed55bf2-9819-4784-974c-739d158f6ee8}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ff629f64-553a-4119-8e68-e02978e2f39d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

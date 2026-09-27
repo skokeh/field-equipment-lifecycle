@@ -5,11 +5,11 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{220d770f-b981-4a12-8f2b-e624b606a994}" IsUserDefined="1">
           <labels>
-            <label description="General" languagecode="1033" />
+            <label description="Spare Part Information" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
@@ -28,6 +28,38 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{5a543331-413c-4a53-9a65-41ee6c572822}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Part Number" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_partnumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="nfs_partnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{214e403c-d2e5-4e26-9726-e02e7a9744ea}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unit Price" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_unitprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="nfs_unitprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04b1dfaa-b7d7-4f95-b1be-7b2e852b65ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Stock Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_stockquantity" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="nfs_stockquantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5be47a36-f253-4347-b5ec-0a2f9fe6df05}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Minimum Stock Level" languagecode="1033" />
+                        </labels>
+                        <control id="nfs_minimumstocklevel" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="nfs_minimumstocklevel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{9bd03129-3f65-48a0-8cbc-b1580c7eede8}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
@@ -42,6 +74,51 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{89a6e206-994e-43df-9ee8-2557c1891c2c}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{86c844a1-ad3c-412e-bce8-47a03875f569}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b5c460c4-f7c4-44be-a22e-b5a6bc118254}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5561dfcb-a34e-403d-880f-152406805706}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{173794aa-14dc-44b7-8bc7-41f078c05802}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7c1415c3-e2ec-43c3-befa-ed93e3724d60}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{57aa417a-32b4-4ea6-b2c9-b16c30d8375a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{61314eab-9fef-4875-acb0-53c0a3f5e06a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
