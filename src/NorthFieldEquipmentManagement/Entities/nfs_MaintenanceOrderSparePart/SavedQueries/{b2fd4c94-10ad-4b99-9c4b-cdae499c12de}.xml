@@ -10,7 +10,7 @@
     <layoutxml>
       <grid name="resultset" jump="nfs_name" select="1" icon="1" preview="1">
         <row name="result" id="nfs_maintenanceordersparepartid">
-          <cell name="nfs_name" width="300" />
+          <cell name="nfs_sparepart" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -20,12 +20,11 @@
       <fetch version="1.0" mapping="logical">
         <entity name="nfs_maintenanceordersparepart">
           <attribute name="nfs_maintenanceordersparepartid" />
-          <attribute name="nfs_name" />
           <attribute name="createdon" />
-          <order attribute="nfs_name" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="nfs_sparepart" />
         </entity>
       </fetch>
     </fetchxml>

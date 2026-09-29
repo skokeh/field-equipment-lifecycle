@@ -11,7 +11,12 @@
       <grid name="resultset" jump="nfs_maintenanceordername" select="1" icon="1" preview="1">
         <row name="result" id="nfs_maintenanceorderid">
           <cell name="nfs_maintenanceordername" width="300" />
-          <cell name="createdon" width="125" />
+          <cell name="nfs_equipment" width="102" />
+          <cell name="nfs_priority" width="100" />
+          <cell name="nfs_status" width="100" />
+          <cell name="nfs_planneddate" width="116" />
+          <cell name="nfs_completeddate" width="132" />
+          <cell name="nfs_requestedby" width="119" />
         </row>
       </grid>
     </layoutxml>
@@ -21,11 +26,16 @@
         <entity name="nfs_maintenanceorder">
           <attribute name="nfs_maintenanceorderid" />
           <attribute name="nfs_maintenanceordername" />
-          <attribute name="createdon" />
           <order attribute="nfs_maintenanceordername" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="nfs_equipment" />
+          <attribute name="nfs_priority" />
+          <attribute name="nfs_status" />
+          <attribute name="nfs_planneddate" />
+          <attribute name="nfs_completeddate" />
+          <attribute name="nfs_requestedby" />
         </entity>
       </fetch>
     </fetchxml>

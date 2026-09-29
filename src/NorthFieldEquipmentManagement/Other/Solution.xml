@@ -88,6 +88,8 @@
       <RootComponent type="1" schemaName="nfs_sparepart" behavior="0" />
       <RootComponent type="1" schemaName="nfs_technician" behavior="0" />
       <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="62" schemaName="nfs_NorthFieldServices" behavior="0" />
+      <RootComponent type="80" schemaName="nfs_NorthFieldServices" behavior="0" />
       <RootComponent type="9" schemaName="nfs_condition" behavior="0" />
       <RootComponent type="9" schemaName="nfs_inspectiontype" behavior="0" />
       <RootComponent type="9" schemaName="nfs_operationalstatus" behavior="0" />
@@ -106,10 +108,22 @@
         <Dependent type="1" schemaName="systemuser" displayName="SystemUser" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
+          <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
+        </Required>
+        <Dependent type="80" schemaName="nfs_NorthFieldServices" displayName="NorthField Services" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="9" schemaName="msdyn_flow_approval_priority" displayName="Priority" solution="msdyn_FlowApprovalsCore (2.2.17.0)">
           <package appName="msdyn_FlowApprovals" version="2.2.17.0">msdyn_FlowApprovals (2.2.17.0)</package>
         </Required>
         <Dependent type="2" schemaName="nfs_priority" displayName="Priority" parentSchemaName="nfs_maintenanceorder" parentDisplayName="Maintenance Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.20)" id.uniquename="AppChannel">
+          <package appName="PowerAppsAppFramework Package" version="1.0.0.25">PowerAppsAppFramework_Anchor (1.0.0.25)</package>
+        </Required>
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=nfs_NorthFieldServices,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="nfs_NorthFieldServices" id.settingdefinitionid.uniquename="AppChannel" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

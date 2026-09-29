@@ -2,44 +2,38 @@
 <savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <savedquery>
     <IsCustomizable>1</IsCustomizable>
-    <CanBeDeleted>0</CanBeDeleted>
+    <CanBeDeleted>1</CanBeDeleted>
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
-    <isdefault>1</isdefault>
-    <savedqueryid>{d7e39a2b-196e-400a-9b27-c277e994bda0}</savedqueryid>
+    <isdefault>0</isdefault>
+    <savedqueryid>{295565f9-4cbc-f111-aaaf-7ced8d75b84d}</savedqueryid>
     <layoutxml>
       <grid name="resultset" jump="nfs_partname" select="1" icon="1" preview="1">
         <row name="result" id="nfs_sparepartid">
-          <cell name="nfs_partname" width="300" />
+          <cell name="nfs_partname" width="200" />
           <cell name="nfs_partnumber" width="112" />
-          <cell name="nfs_unitprice" width="100" />
           <cell name="nfs_stockquantity" width="125" />
           <cell name="nfs_minimumstocklevel" width="167" />
-          <cell name="createdon" width="125" />
+          <cell name="nfs_unitprice" width="100" />
         </row>
       </grid>
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
         <entity name="nfs_sparepart">
-          <attribute name="nfs_sparepartid" />
           <attribute name="nfs_partname" />
-          <attribute name="createdon" />
-          <order attribute="nfs_partname" descending="false" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
+          <attribute name="nfs_sparepartid" />
           <attribute name="nfs_partnumber" />
-          <attribute name="nfs_unitprice" />
           <attribute name="nfs_stockquantity" />
           <attribute name="nfs_minimumstocklevel" />
+          <attribute name="nfs_unitprice" />
         </entity>
       </fetch>
     </fetchxml>
-    <IntroducedVersion>1.0</IntroducedVersion>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <LocalizedNames>
-      <LocalizedName description="Active Spare Parts" languagecode="1033" />
+      <LocalizedName description="Low Stock Spare Parts" languagecode="1033" />
     </LocalizedNames>
   </savedquery>
 </savedqueries>

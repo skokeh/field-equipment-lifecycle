@@ -10,7 +10,11 @@
     <layoutxml>
       <grid name="resultset" jump="nfs_name" select="1" icon="1" preview="1">
         <row name="result" id="nfs_inspectionid">
-          <cell name="nfs_name" width="300" />
+          <cell name="nfs_name" width="191" />
+          <cell name="nfs_equipment" width="102" />
+          <cell name="nfs_inspectiondate" width="129" />
+          <cell name="nfs_inspectiontype" width="130" />
+          <cell name="nfs_result" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -26,6 +30,10 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="nfs_equipment" />
+          <attribute name="nfs_inspectiondate" />
+          <attribute name="nfs_inspectiontype" />
+          <attribute name="nfs_result" />
         </entity>
       </fetch>
     </fetchxml>
